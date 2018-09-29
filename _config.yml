@@ -1,0 +1,43 @@
+# Site settings
+title: Shrey Sangal
+description: 'An enthusiastic, DevOps Evangelist. Passionate about DevOps, Possess Rich experience in various DevTools. I always love to discuss about CI/CD mainly Docker, Containers, Sonarqube, Jenkins, etc.'
+url: 'https://shreys-s.github.io'
+baseurl: '/shreys-s.github.io'
+# google_analytics: 'UA-XXXXXX-X'
+# disqus_shortname: 'your-disqus-name'
+
+author:
+  name: 'Shrey Sangal'
+  email: shrey.careers@gmail.com
+  twitter_username: shrey_sangal
+  facebook_username: shrey.sangal
+  github_username:  shreys-s
+  linkedin_username:  shreysangal
+
+defaults:
+  -
+    scope:
+      path: ''
+      type: 'posts'
+    values:
+        layout: 'post'
+
+# Build settings
+destination: _site
+paginate: 10
+permalink: /:year/:title/
+markdown: kramdown
+highlighter: rouge
+
+sass:
+    sass_dir: _sass
+    style: compressed
+
+kramdown:
+  # use Github Flavored Markdown
+  input: GFM
+  # do not replace newlines by <br>s
+  hard_wrap: false
+
+plugins: ['jekyll-paginate']
+exclude: ['README.md', 'Gemfile', 'Gemfile.lock', 'screenshot.png']
